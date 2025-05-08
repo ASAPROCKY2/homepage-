@@ -1,0 +1,215 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background-color: #fafafa;
+  color: #141414;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* === NAVBAR === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%; 
+  background: #fafafa;
+}
+
+.logo img {
+  height: 20px;   /* Adjust the size as needed */
+  width: auto;    /* Keep the aspect ratio */
+}
+
+
+
+
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  font-size: 0.9rem;
+  color: #595959;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #141414;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;  /* Position relative to the nearest positioned ancestor */
+  top: 0;              /* Align to the top */
+  right: 0;            /* Align to the right */
+  padding: 1rem;       /* Optional: to give it some space from the edges */
+}
+
+
+.auth-buttons a {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+
+.auth-buttons {
+  margin-left: auto; /* Pushes to the right */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.auth-buttons .login,
+.auth-buttons .register {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.auth-buttons .login {
+  background: transparent;
+  border: 1px solid rgba(32, 9, 9, 0.733) none;
+}
+
+.auth-buttons .register {
+  border: 1px solid #141414;
+  background: transparent;
+}
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  margin-left:  2rem 5% ;
+
+  flex-wrap: wrap;
+  flex-direction: row-reverse; /* 👈 This moves image to left */
+}
+
+
+.hero-text {
+  flex: 1;
+  max-width: 450px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #595959;
+  margin-bottom: 2rem;
+}
+
+.hero-text button {
+  background: #141414;
+  color: white;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+
+}
+
+.hero-text button:hover {
+  background: #333;
+}
+
+/* === HERO IMAGE SECTION === */
+.hero-visual {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual img.main-person-img {
+  width: 100%; /* scale image within smaller container */
+  border-radius: 0 10rem 0 0; /* optional stylization */
+  object-fit: cover;
+}
+
+/* SHAPES around person */
+.hero-visual .shapes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 50%;
+}
+
+.hero {
+  margin-bottom: 3rem;
+}
+
+
+.hero-visual .shapes img {
+  width: 50%;
+  height: auto;
+}
+
+.hero-text .client-logos {
+  margin-top: 4rem;
+}
+
+
+
+
+
+/* === CLIENT LOGOS === */
+.client-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  
+  margin:  0 10% 3rem;
+  flex-wrap:  nowrap;
+  opacity: 0.8;
+  
+  
+  width:100%;
+  margin-left: 0%;
+  
+}
+
+.client-logos img {
+  height: 25px;
+  object-fit: contain;
+ 
+  
+}
+
